@@ -15,12 +15,14 @@
 </head>
 
 <body style="font: menu;">
-    <div class="nav">
+    <div class="nav" data-aos="fade-up" data-aos-duration="3000">
         <div class="nav-content">
             <ul class="nav-list">
                 <li class="nav-list-item"><button class="youtube"><i class="fab fa-youtube"></i></button></li>
                 <li class="nav-list-item">
-                    <a href="#" class="logo-link"><img class="logo" src="photos/logo.svg" alt=""></a>
+                    <a href="#" class="logo-link">
+                        <img class="logo" src="photos/logo.svg" alt="">
+                    </a>
                 </li>
                 <li class="nav-list-item ">
                     <div id="menu-button" class="ToggleButton">
@@ -146,7 +148,7 @@
 
     <div class="main-content2">
         <div class="main-content-items">
-            <div class="hero-logo ">
+            <div class="hero-logo">
                 <img class="brand" src="photos/brand1_56aa2ae31f.png" alt="">
             </div>
 
@@ -159,7 +161,7 @@
                         <p class="hero-content-text-item">А еще Вас порадует разнообразие вкусов йогуртов Epica — от любимой всеми клубники до экзотического красного апельсина.</p>
                         <p class="hero-content-text-item">Узнайте больше на<a class="hero-content-text-item-link" href="">www.epica.ru.</a> </p>
                     </div>
-                    <div class="social">
+                    <div class="social" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div class="linkedin"><a href="#" class="social-item"><i class="social-items fab fa-linkedin-in fa-4x"></i></a></div>
                         <div class="instagram"><a href="#" class="social-item"><i class="social-items fab fa-instagram fa-4x"></i></a></div>
 
@@ -171,7 +173,7 @@
 
             </div>
             <div class="product-line">
-                <div class="product-line-item">
+                <div class="product-line-item" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="imagex image1"></div>
                     <button class="product-line-buton buton1">ЙОГУРТ</button>
                 </div>
@@ -190,7 +192,7 @@
                     <div class="button-4"><button class="product-line-buton button-4 buton4">ЙОГУРТ С ЭКСТРАКТАМИ ЦВЕТОВ «BOUQUET»</button></div>
 
                 </div>
-                <div class="product-line-item">
+                <div class="product-line-item" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="imagex image5"></div>
                     <button class="product-line-buton buton5">ЙОГУРТ SIMPLE</button>
                 </div>
@@ -205,7 +207,7 @@
             </div>
 
             <div class="produces">
-                <div class="yoghurt-content">
+                <div class="yoghurt-content" data-aos="fade-right" data-aos-duration="3000">
                     <div class="yoghurt-in">
 
                         <div class="yoghurt-content2">
@@ -307,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottle-content">
+                <div class="bottle-content" data-aos="fade-left" data-aos-duration="3000">
                     <div class="bottle-in">
                         <div class="bottle-title">
                             <h4 class="bottle-title-small">
@@ -376,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="crispy-content">
+                <div class="crispy-content" data-aos="fade-right" data-aos-duration="3000">
                     <div class="crispy-in">
                         <div class="crispy-title">
                             <h4 class="crispy-title-small">
@@ -441,7 +443,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bouquet-content">
+                <div class="bouquet-content" data-aos="fade-left" data-aos-duration="3000">
                     <div class="bouquet-in">
                         <div class="bouquet-title">
                             <h4 class="bouquet-title-small">
@@ -477,7 +479,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="simple-content">
+                <div class="simple-content" data-aos="fade-right" data-aos-duration="3000">
                     <div class="simple-in">
                         <div class="simple-title">
                             <h4 class="simple-title-small">
@@ -563,23 +565,22 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script>
-                $('#menu-button').click(function () {
-        
+                $('#menu-button').click(function() {
+
                     if ($(".mobile-menu").hasClass('active')) {
-                         $("#menu-button").removeClass("active");   
+                        $("#menu-button").removeClass("active");
                         $(".mobile-menu").removeClass("active");
-                    }
-                    else{
-                        $("#menu-button").addClass("active");  
+                    } else {
+                        $("#menu-button").addClass("active");
                         $(".mobile-menu").addClass("active");
-                    } 
-        
+                    }
+
                 });
             </script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script>
                 AOS.init();
-                </script>
+            </script>
 
 </body>
 
